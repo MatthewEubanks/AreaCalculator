@@ -26,8 +26,9 @@ public class AreaCalculator {
         System.out.println("5) Quit");
         System.out.print("Which Shape: ");
         int shape = keyboard.nextInt();
+        //While loop to check if the user wants to end
         while (shape != 5) {
-            
+            //If statements determine which shape the user wants to calculate the area for
             if (shape == 1) {
                 System.out.print("Base: ");
                 int base = keyboard.nextInt();
@@ -60,6 +61,7 @@ public class AreaCalculator {
         }
 
     }
+//Triangle function to calculate the area of a triangle
 
     public static double area_triangle(int base, int height) {
         double triArea;
@@ -67,6 +69,7 @@ public class AreaCalculator {
         return triArea;
 
     }
+//Rectangle function to calculate the area of a rectangle
 
     public static int area_rectangle(int length, int width) {
         int rectArea;
@@ -74,12 +77,14 @@ public class AreaCalculator {
         return rectArea;
 
     }
+//Square function to calculate the area of a square
 
     public static int area_square(int side) {
         int sqrArea;
         sqrArea = side * side;
         return sqrArea;
     }
+//Cirlce function to calculate the area of a circle.
 
     public static double area_circle(int radius) {
         double cirArea = Math.PI * (radius * radius);
